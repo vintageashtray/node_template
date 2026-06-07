@@ -16,6 +16,7 @@ import {nIsPowerOfTwo} from './algorythms/nIsPowerOfTwo.js'
 import {oDecimalToBinary} from './algorythms/oDecimalToBinary.js'
 import {pSimpleInterest} from './algorythms/pSimpleInterest.js'
 import {qUOfN} from './algorythms/qUOfN.js'
+import { rPascalTriangle } from './algorythms/rPascalTriangle.js'
 
 aSumNthNumber(5)
 
@@ -90,3 +91,19 @@ pSimpleInterest(1000, 5, 24)
 
 //--------------------
 qUOfN(0)
+
+
+//--------------------
+rPascalTriangle(11)
+
+
+// function areWeThereYet(current, limit) {
+//     console.log(`we are at step ${current} of ${limit}`)
+//     if (current < limit) {
+//         current++
+//         areWeThereYet(current, limit)
+//     }else{
+//         console.log("------------Done!")
+//     }
+// }
+// areWeThereYet(-3, 14)
