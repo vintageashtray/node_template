@@ -1,13 +1,13 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function eFibonacciSeq(n){
+export function eFibonacciSeq(n,logLevel=3){
     if (!isArgumentValid(n, 'number')){return}
 
     const fibonacci = [];
 
     if (n === 0){
-        l.warn(` 5: You chose 0 terms of the sequence! No item is there to display.`)
+        l.warn(` 5: You chose 0 terms of the sequence! No item is there to display.`, logLevel)
         return
     }
     if (n > 0){
@@ -22,6 +22,6 @@ export function eFibonacciSeq(n){
         }
     }
     
-    l.info(` 5: The '${n}' terms of the Fibonacci Sequence are: '${fibonacci.join(', ')}'`)
+    l.info(` 5: The '${n}' terms of the Fibonacci Sequence are: '${fibonacci.join(', ')}'`, logLevel)
     return fibonacci
 }

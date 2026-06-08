@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function jDigitCount(n,loglevel=3){
+export function jDigitCount(n, logLevel=3){
     if (!isArgumentValid(n, 'number')){return}
 
     let n0 = n;
@@ -11,5 +11,5 @@ export function jDigitCount(n,loglevel=3){
         i++;
     }
 
-    l.info(`10: The number '${n0}' carries '${i}' digits.`)
+    l.info(`10: The number '${n0}' carries '${i}' digits.`, logLevel)
 }

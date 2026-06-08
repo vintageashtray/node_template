@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function qUOfN(n){
+export function qUOfN(n, logLevel=3){
     if (!isArgumentValid(n, 'number')){return}
 
     const Un = [3,8]
@@ -11,5 +11,5 @@ export function qUOfN(n){
         Un.push(seq);
     }
 
-    l.success(`17: U of ${n} is: '${Un[n]}'`)
+    l.success(`17: U of ${n} is: '${Un[n]}'`, logLevel)
 }

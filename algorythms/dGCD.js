@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentInvalid} from '../lib/utilities.js'
 
-export function dGCD(a, b){
+export function dGCD(a, b,logLevel=3){
     if (isArgumentInvalid(a, 'number') || isArgumentInvalid(b, 'number')){return}
 
     let GCD = a; //23
@@ -13,6 +13,6 @@ export function dGCD(a, b){
         b_ = mod;
     }
 
-    l.info(` 4: The GCD of '${a}' and '${b}' is ${GCD}`)
+    l.info(` 4: The GCD of '${a}' and '${b}' is ${GCD}`, logLevel)
     return GCD
 }

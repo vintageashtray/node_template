@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function hNumPower(a, b){
+export function hNumPower(a, b, logLevel=3){
     if (!isArgumentValid(a, 'number') || !isArgumentValid(b, 'number')){return}
 
     let power = 1;
@@ -9,5 +9,5 @@ export function hNumPower(a, b){
         power = power * a;
     }
 
-    l.info(` 8: '${a}' to the power '${b}' is: '${power}'`)
+    l.info(` 8: '${a}' to the power '${b}' is: '${power}'`, logLevel)
 }

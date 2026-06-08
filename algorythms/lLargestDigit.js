@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function lLargestDigit(n){
+export function lLargestDigit(n, logLevel=3){
     if (!isArgumentValid(n, 'number')){return}
 
     const n0 = n;
@@ -17,5 +17,5 @@ export function lLargestDigit(n){
         }
     }
 
-    l.info(`12: The largest digit from '${n0}' is: '${collector}`)
+    l.info(`12: The largest digit from '${n0}' is: '${collector}`, logLevel)
 }

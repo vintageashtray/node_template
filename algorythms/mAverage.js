@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function mAverage(numbers = []){
+export function mAverage(numbers = [], logLevel=3){
     if (!isArgumentValid(numbers, 'object')){return}
     const divisor = numbers.length
 
@@ -14,5 +14,5 @@ export function mAverage(numbers = []){
 
     const average = sum / divisor
 
-    l.info(`13: '${average}'`)
+    l.info(`13: '${average}'`, logLevel)
 }

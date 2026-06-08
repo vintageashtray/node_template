@@ -4,19 +4,19 @@ import { l, isArgumentValid } from '../lib/utilities.js'
 const pascalTriangle = [[1]]; /// 0 1 pascalTriangle[1]
 let row = [];
 
-export function rPascalTriangle(n) {
+export function rPascalTriangle(n, logLevel=3) {
     if (!isArgumentValid(n, 'number')) { return }
 
     let x;
     let y;
-    l.info("-------------")
-    l.info(`18: 2^0 = ${1} - ${pascalTriangle[0].join(', ')}`)
+    l.info("-------------", logLevel)
+    l.info(`18: 2^0 = ${1} - ${pascalTriangle[0].join(', ')}`, logLevel)
     for (x = 2; x <= n; x++) {
         for (y = 0; y < x; y++) {
             row.push(sequencerA(x, y) + sequencerB(x, y))
         }
         pascalTriangle.push(row)
-        l.info(`18: 2^${x-1} = ${row.reduce((sum,current)=>sum+=current)} - ${row.join(', ')}`)
+        l.info(`18: 2^${x-1} = ${row.reduce((sum,current)=>sum+=current)} - ${row.join(', ')}`, logLevel)
         row = []
     }
 

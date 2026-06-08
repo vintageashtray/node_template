@@ -23,7 +23,7 @@ const LOGLEVEL={
     ERRORS:2,
     NONE:0
 }
-aSumNthNumber(5)
+aSumNthNumber(5,LOGLEVEL.NONE)
 
 //test the imported function 
 
@@ -33,73 +33,73 @@ aSumNthNumber(5)
 
 
 //--------------------
-bEvenOrOdd(5)
+bEvenOrOdd(5,LOGLEVEL.NONE)
 
 
 //--------------------
-cFactorialLoop(7)
+cFactorialLoop(7,LOGLEVEL.NONE)
 
 // cFactorialRecursion(7)
 
 
 //--------------------
-dGCD(105, 252)  // 252, 105
+dGCD(252, 105,LOGLEVEL.NONE)
 
 
 //--------------------
-eFibonacciSeq(6)
+eFibonacciSeq(6,LOGLEVEL.NONE)
 
 
 //--------------------
-fIsNumPrime(29,LOGLEVEL.ERRORS)
+fIsNumPrime(29,LOGLEVEL.NONE)
 
 
 //--------------------
-gReverseDigits(1234)
+gReverseDigits(1234,1,LOGLEVEL.NONE)
 
 
 //--------------------
-hNumPower(2, 5)
+hNumPower(2, 5,LOGLEVEL.NONE)
 
 
 //--------------------
-iPalindrome(121)
+iPalindrome(121, 1,LOGLEVEL.NONE)
 
 
 //--------------------
-jDigitCount(567)
+jDigitCount(567,LOGLEVEL.NONE)
 
 
 //--------------------
-kDigitSum(456, 1, 1)
+kDigitSum(456, 0,LOGLEVEL.NONE)
 
 
 //--------------------
-lLargestDigit(2947)
+lLargestDigit(2947,LOGLEVEL.NONE)
 
 
 //--------------------
-mAverage([10, 20, 30])
+mAverage([10, 20, 30],LOGLEVEL.NONE)
 
 
 //--------------------
-nIsPowerOfTwo(16)
+nIsPowerOfTwo(16,LOGLEVEL.NONE)
 
 
 //--------------------
-oDecimalToBinary(25)
+oDecimalToBinary(25,LOGLEVEL.NONE)
 
 
 //--------------------
-pSimpleInterest(1000, 5, 24)
+pSimpleInterest(1000, 5, 24,LOGLEVEL.NONE)
 
 
 //--------------------
-qUOfN(0)
+qUOfN(0,LOGLEVEL.NONE)
 
 
 //--------------------
-rPascalTriangle(11)
+rPascalTriangle(11,LOGLEVEL.NONE)
 
 
 // function areWeThereYet(current, limit) {

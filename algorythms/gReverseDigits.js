@@ -1,7 +1,7 @@
 //import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
-export function gReverseDigits(n, nolog, outputNumber){
+export function gReverseDigits(n, outputString, logLevel=1){
     //return n.toString().split('').reverse().join('')
     //if number has too many ending digits ex 19000 👆
     //otherwise do the while loop % 10 approach
@@ -9,7 +9,7 @@ export function gReverseDigits(n, nolog, outputNumber){
     if (!isArgumentValid(n, 'number')){return}
 
     const n0 = n
-    let reverse = outputNumber ? 0 : "" ;
+    let reverse = outputString ? "" : 0 ;
 
     while (n != 0){
         let mod10 = n % 10;
@@ -21,9 +21,9 @@ export function gReverseDigits(n, nolog, outputNumber){
 
     // reverse = parseInt(reverse);  // we can't have this, zeroes would be lost otherwise
 
-    if (nolog != 1){
-        l.info(` 7: The reversed digits of '${n0}' are '${reverse}'`)
-    }
+    // if (nolog != 1){
+        l.info(` 7: The reversed digits of '${n0}' are '${reverse}'`, logLevel)
+    //}
 
     return reverse
 }

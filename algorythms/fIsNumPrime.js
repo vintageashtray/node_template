@@ -30,7 +30,7 @@ function allPrimeNumbersUnder(n,logLevel=3){
     for(let i=2;i<n;i++){
         results = fIsNumPrime(i) ? [...results,i] : results
     }   
-    l.info(`found ${results.length} prime numbers under ${n} : [${results.join(',')}]` )
+    l.info(` 6: found ${results.length} prime numbers under ${n} : [${results.join(',')}]`, logLevel)
 }
 
-allPrimeNumbersUnder(33)
+// allPrimeNumbersUnder(33)
