@@ -1,0 +1,22 @@
+## ToFix:
+
+ToTest:
+
+ToAdd:
+
+## ToLookUp:
+String & Array manipulation functions.
+Ref -   https://www.w3schools.com/jsref/jsref_obj_array.asp
+        https://www.w3schools.com/jsref/jsref_obj_date.asp
+        https://www.w3schools.com/jsref/jsref_obj_string.asp
+        https://www.w3schools.com/jsref/jsref_obj_object.asp
+        https://www.w3schools.com/jsref/jsref_obj_json.asp
+        https://www.w3schools.com/jsref/jsref_obj_math.asp
+        - after looking up a reference (string for example) list what you learned to an AI chat with prompt msg:
+        i just learned string functions (list what you learned) i need few exercices to practice generate 10 exercices where i can solve them using only the functions mentioned without providing any tips or help of any kind 
+        just the exercice and input/output example 
+
+## TodoNext:
+Use LOGLEVEL on all functions definitions inside ./algorythms, and on execution inside index.js
+
+## Notes:
