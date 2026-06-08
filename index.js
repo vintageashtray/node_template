@@ -17,7 +17,12 @@ import {oDecimalToBinary} from './algorythms/oDecimalToBinary.js'
 import {pSimpleInterest} from './algorythms/pSimpleInterest.js'
 import {qUOfN} from './algorythms/qUOfN.js'
 import { rPascalTriangle } from './algorythms/rPascalTriangle.js'
-
+const LOGLEVEL={
+    ALL:3,
+    WARNINGS:1,
+    ERRORS:2,
+    NONE:0
+}
 aSumNthNumber(5)
 
 //test the imported function 
@@ -38,7 +43,7 @@ cFactorialLoop(7)
 
 
 //--------------------
-dGCD(252, 105)
+dGCD(105, 252)  // 252, 105
 
 
 //--------------------
@@ -46,7 +51,7 @@ eFibonacciSeq(6)
 
 
 //--------------------
-fIsNumPrime(29)
+fIsNumPrime(29,LOGLEVEL.ERRORS)
 
 
 //--------------------

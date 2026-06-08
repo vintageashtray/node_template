@@ -4,17 +4,15 @@ import {l, isArgumentInvalid} from '../lib/utilities.js'
 export function dGCD(a, b){
     if (isArgumentInvalid(a, 'number') || isArgumentInvalid(b, 'number')){return}
 
-    let i = 0;
-    let a0 = a;
-    let b0 = b;
+    let GCD = a; //23
+    let b_ = b; //97
 
-    while (b != 0){
-        i++;
-        // l.info(`i, '${i}', a, '${a}', b, '${b}'`)
-        let mod = a % b;
-        a = b;
-        b = mod;
+    while (b_ != 0){
+        let mod = GCD % b_; // GCD > b_ ?  GCD mod b_ : GCD
+        GCD = b_;
+        b_ = mod;
     }
-    l.info(` 4: The GCD of '${a0}' and '${b0}' is ${a}`)
-    return a
+
+    l.info(` 4: The GCD of '${a}' and '${b}' is ${GCD}`)
+    return GCD
 }
