@@ -1,7 +1,7 @@
 import {l, isArgumentValid, isArgumentInvalid} from '../lib/utilities.js'
 
 export function cFactorialLoop(n,logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     let factorial = 1;
 
@@ -13,7 +13,7 @@ export function cFactorialLoop(n,logLevel=3){
 
 let factorial;
 export function cFactorialRecursion(n,logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
     
     if (n === 0){return 1};
     

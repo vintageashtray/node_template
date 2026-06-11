@@ -17,13 +17,16 @@ import {oDecimalToBinary} from './algorythms/oDecimalToBinary.js'
 import {pSimpleInterest} from './algorythms/pSimpleInterest.js'
 import {qUOfN} from './algorythms/qUOfN.js'
 import { rPascalTriangle } from './algorythms/rPascalTriangle.js'
+import {sValuePalindrome} from './algorythms/sValuePalindrome.js'
+
 const LOGLEVEL={
     ALL:3,
     WARNINGS:1,
     ERRORS:2,
     NONE:0
 }
-aSumNthNumber(5,LOGLEVEL.NONE)
+//--------------------1
+aSumNthNumber(5,LOGLEVEL.ALL)
 
 //test the imported function 
 
@@ -32,74 +35,78 @@ aSumNthNumber(5,LOGLEVEL.NONE)
 //sumNthNumber('5s') //fail case `❌ invalid argument '5s' of type 'string'`
 
 
-//--------------------
-bEvenOrOdd(5,LOGLEVEL.NONE)
+//--------------------2
+bEvenOrOdd(5,LOGLEVEL.ALL)
 
 
-//--------------------
-cFactorialLoop(7,LOGLEVEL.NONE)
+//--------------------3
+cFactorialLoop(7,LOGLEVEL.ALL)
 
 // cFactorialRecursion(7)
 
 
-//--------------------
-dGCD(252, 105,LOGLEVEL.NONE)
+//--------------------4
+dGCD(252, 105,LOGLEVEL.ALL)
 
 
-//--------------------
-eFibonacciSeq(6,LOGLEVEL.NONE)
+//--------------------5
+eFibonacciSeq(6,LOGLEVEL.ALL)
 
 
-//--------------------
-fIsNumPrime(29,LOGLEVEL.NONE)
+//--------------------6
+fIsNumPrime(29,LOGLEVEL.ALL)
 
 
-//--------------------
-gReverseDigits(1234,1,LOGLEVEL.NONE)
+//--------------------7
+gReverseDigits(1234,1,LOGLEVEL.ALL)
 
 
-//--------------------
-hNumPower(2, 5,LOGLEVEL.NONE)
+//--------------------8
+hNumPower(2, -3,LOGLEVEL.ALL)
 
 
-//--------------------
-iPalindrome(121, 1,LOGLEVEL.NONE)
+//--------------------9
+iPalindrome(121, 1,LOGLEVEL.ALL)
 
 
-//--------------------
-jDigitCount(567,LOGLEVEL.NONE)
+//--------------------10
+jDigitCount(567,LOGLEVEL.ALL)
 
 
-//--------------------
-kDigitSum(456, 0,LOGLEVEL.NONE)
+//--------------------11
+kDigitSum(456, 0,LOGLEVEL.ALL)
 
 
-//--------------------
-lLargestDigit(2947,LOGLEVEL.NONE)
+//--------------------12
+lLargestDigit(2947,LOGLEVEL.ALL)
 
 
-//--------------------
-mAverage([10, 20, 30],LOGLEVEL.NONE)
+//--------------------13
+mAverage([10, 20, 30],LOGLEVEL.ALL)
 
 
-//--------------------
-nIsPowerOfTwo(16,LOGLEVEL.NONE)
+//--------------------14
+nIsPowerOfTwo(16,LOGLEVEL.ALL)
 
 
-//--------------------
-oDecimalToBinary(25,LOGLEVEL.NONE)
+//--------------------15
+oDecimalToBinary(25,LOGLEVEL.ALL)
 
 
-//--------------------
-pSimpleInterest(1000, 5, 24,LOGLEVEL.NONE)
+//--------------------16
+pSimpleInterest(1000, 5, 24,LOGLEVEL.ALL)
 
 
-//--------------------
-qUOfN(0,LOGLEVEL.NONE)
+//--------------------17
+qUOfN(0,LOGLEVEL.ALL)
 
 
-//--------------------
+//--------------------18
 rPascalTriangle(11,LOGLEVEL.NONE)
+
+
+//--------------------19
+sValuePalindrome('Radar',LOGLEVEL.ALL)
 
 
 // function areWeThereYet(current, limit) {

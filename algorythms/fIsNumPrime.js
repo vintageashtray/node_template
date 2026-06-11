@@ -2,7 +2,7 @@
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function fIsNumPrime(n,logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
     if (n === (0 || 1)){
         l.warn(` 6: 0 is divisible by every number, and 1 is only divisible by itself. They don't meet the requirement by mathematical definition!`)
         return

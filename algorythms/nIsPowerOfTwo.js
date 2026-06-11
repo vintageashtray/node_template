@@ -2,7 +2,7 @@
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function nIsPowerOfTwo(n, logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     if (n === 0){
         l.warn(`14: '0' is mathematically impossible. Pick a number greater than 2.`, logLevel)

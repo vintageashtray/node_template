@@ -1,8 +1,8 @@
 //import your dependencies if needed 
-import {l, isArgumentInvalid} from '../lib/utilities.js'
+import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function dGCD(a, b,logLevel=3){
-    if (isArgumentInvalid(a, 'number') || isArgumentInvalid(b, 'number')){return}
+    if (!isArgumentValid(a, ['number']) || !isArgumentValid(b, ['number'])){return}
 
     let GCD = a; //23
     let b_ = b; //97

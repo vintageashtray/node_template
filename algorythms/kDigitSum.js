@@ -3,7 +3,7 @@ import {l, isArgumentValid} from '../lib/utilities.js'
 import {gReverseDigits} from './gReverseDigits.js'
 
 export function kDigitSum(n, outputString, logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     const sum = gReverseDigits(n, outputString)
 

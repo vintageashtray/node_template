@@ -2,7 +2,7 @@
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function jDigitCount(n, logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     let n0 = n;
     let i = 0;

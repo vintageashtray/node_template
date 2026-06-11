@@ -17,6 +17,9 @@ Ref -   https://www.w3schools.com/jsref/jsref_obj_array.asp
         just the exercice and input/output example 
 
 ## TodoNext:
----Use LOGLEVEL on all functions definitions inside ./algorythms, and on execution inside index.js
+[x] Use LOGLEVEL on all functions definitions inside ./algorythms, and on execution inside index.js
+[ ] After reading up on Stings and Arrays, go over the scripts you wrote, and try to remake them according to that new knowledge
+[x] hNumPower() should also handle negative power cases
 
 ## Notes:
+        [ ] hNumPower() gives 'Infinity' in case of 1/0

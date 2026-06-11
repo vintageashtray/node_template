@@ -2,7 +2,7 @@
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function eFibonacciSeq(n,logLevel=3){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     const fibonacci = [];
 

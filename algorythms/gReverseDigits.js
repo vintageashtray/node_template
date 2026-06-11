@@ -6,7 +6,7 @@ export function gReverseDigits(n, outputString, logLevel=1){
     //if number has too many ending digits ex 19000 👆
     //otherwise do the while loop % 10 approach
 
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     const n0 = n
     let reverse = outputString ? "" : 0 ;
@@ -29,7 +29,7 @@ export function gReverseDigits(n, outputString, logLevel=1){
 }
 
 export function reverseDigits(n){
-    if (!isArgumentValid(n, 'number')){return}
+    if (!isArgumentValid(n, ['number'])){return}
 
     const n0 = n
     let reverse;
