@@ -1,4 +1,3 @@
-//import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function hNumPower(a, b, logLevel=3){
@@ -18,7 +17,6 @@ export function hNumPower(a, b, logLevel=3){
         power = power * a;
     }
     
-
     l.success(` 8: '${a}' to the power '${b}' is: '${power}'`, logLevel)
     return power
 }

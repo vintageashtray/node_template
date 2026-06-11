@@ -1,4 +1,3 @@
-//import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function bEvenOrOdd(n,logLevel=3){
@@ -10,10 +9,3 @@ export function bEvenOrOdd(n,logLevel=3){
         l.info(` 2: ${n} is Odd`, logLevel)
     }
 }
-
-
-/*
-if(condition){  logic will run only when condition evaluates to true
-// logic
-}
-*/

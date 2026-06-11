@@ -1,4 +1,3 @@
-//import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function gReverseDigits(n, outputString, logLevel=1){
@@ -19,11 +18,7 @@ export function gReverseDigits(n, outputString, logLevel=1){
         n = (n - mod10) / 10
     }
 
-    // reverse = parseInt(reverse);  // we can't have this, zeroes would be lost otherwise
-
-    // if (nolog != 1){
-        l.info(` 7: The reversed digits of '${n0}' are '${reverse}'`, logLevel)
-    //}
+    l.info(` 7: The reversed digits of '${n0}' are '${reverse}'`, logLevel)
 
     return reverse
 }

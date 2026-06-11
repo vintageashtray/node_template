@@ -1,4 +1,3 @@
-//import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function eFibonacciSeq(n,logLevel=3){

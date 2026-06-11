@@ -1,7 +1,6 @@
-//import your dependencies if needed 
 import { l, isArgumentValid } from '../lib/utilities.js'
 
-const pascalTriangle = [[1]]; /// 0 1 pascalTriangle[1]
+const pascalTriangle = [[1]];
 let row = [];
 
 export function rPascalTriangle(n, logLevel=3) {
@@ -9,7 +8,7 @@ export function rPascalTriangle(n, logLevel=3) {
 
     let x;
     let y;
-    l.info("18: -------------", logLevel)
+
     l.success(`18: 2^0 = ${1} - ${pascalTriangle[0].join(', ')}`, logLevel)
     for (x = 2; x <= n; x++) {
         for (y = 0; y < x; y++) {

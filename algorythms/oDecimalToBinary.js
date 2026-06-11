@@ -1,4 +1,3 @@
-//import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 
 export function oDecimalToBinary(n, logLevel=3){
@@ -6,7 +5,6 @@ export function oDecimalToBinary(n, logLevel=3){
 
     const n0 = n;
 
-    //return n.toString().split('').reverse().join('')
     let bin = "";
 
     while (n != 0){

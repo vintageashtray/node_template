@@ -13,4 +13,3 @@ export function aSumNthNumber(n,logLevel=3){
 export const sumNthNum = (n,logLevel=3) => {
     l.info(`Testing '${n}'`, LogLevel)
 }
-//module.exports = sumNthNumber; commonjs syntax 
