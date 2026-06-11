@@ -1,4 +1,3 @@
-//import your dependencies if needed 
 import {l, isArgumentValid} from '../lib/utilities.js'
 import {gReverseDigits} from './gReverseDigits.js'
 
