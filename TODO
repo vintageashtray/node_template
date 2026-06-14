@@ -17,9 +17,125 @@ Ref -   https://www.w3schools.com/jsref/jsref_obj_array.asp
         just the exercice and input/output example 
 
 ## TodoNext:
-[x] Use LOGLEVEL on all functions definitions inside ./algorythms, and on execution inside index.js
-[ ] After reading up on Stings and Arrays, go over the scripts you wrote, and try to remake them according to that new knowledge
-[x] hNumPower() should also handle negative power cases
+[+] Use LOGLEVEL on all functions definitions inside ./algorythms, and on execution inside index.js
+[-] After reading up on Stings and Arrays, go over the scripts you wrote, and try to remake them according to that new knowledge
+[+] hNumPower() should also handle negative power cases
+[-] Make Sudoku: have an already filled board, only make the verification function (vertical, horizontal, grids of 9)
+
+
+## Exercises:
+
+[-] *1. Repeat Runner*
+* *Goal*: Repeat a given string a specific number of times.
+* *Input*: `"Run"`, `3`
+* *Expected Output*: `"RunRunRun"`
+
+[-] *2. Email Masker*
+* *Goal*: Replace the characters of an email prefix with asterisks, keeping only the first and last letter of the prefix visible before the @ symbol.
+* *Input*: "codelearn@email.com"Expected 
+* *Expected Output*: "c*******n@email.com"
+
+[-] *3. URL Slug Creator*
+* *Goal*: Convert a title string into a URL-friendly slug by making it lowercase and replacing spaces with hyphens.
+* *Input*: "Top 10 JavaScript Tips"
+* *Expected Output*: "top-10-javascript-tips"
+
+[-] *4. File Extension Extractor*
+* *Goal*: Extract and return the file extension from a full filename string.
+* *Input*: "main.app.component.ts"
+* *Expected Output*: "ts"
+
+[-] *5. Word Truncator*
+* *Goal*: Shorten a string to a specific length and append "..." to the end if it exceeds that length.
+* *Input*: "JavaScript is awesome", 10
+* *Expected Output*: "JavaScript..."
+
+[-] *6. Name Formatter*
+* *Goal*: Take a full name and return it formatted as "Lastname, Firstname".
+* *Input*: "Alan Turing"
+* *Expected Output*: "Turing, Alan"
+
+[-] *7. Character Counter*
+* *Goal*: Count how many times a specific letter appears inside a string (case-insensitive).
+* *Input*: `"Banana"`, `"a"`
+* *Expected Output*: `3`
+
+[-] *8. Word Replacer*
+* *Goal*: Find a specific word in a sentence and replace all occurrences of it with a new word.
+* *Input*: `"The cat sat on the mat"`, `"mat"`, `"couch"`
+* *Expected Output*: `"The cat sat on the couch"`
+
+[-] *9. Money Formatter*
+* *Goal*: Ensure a number string starts with a currency symbol (default to dollar sign `$`) and always has exactly two decimal places.
+* *Input*: `"45.5"`
+* *Expected Output*: `"$45.50"`
+
+[-] *10. Space Cleaner*
+* *Goal*: Remove all leading, trailing, and extra duplicate spaces from inside a sentence.
+* *Input*: `" Too many spaces "`
+* *Expected Output*: `"Too many spaces"`
+
+[-] *1. Array Multiplier*
+* *Goal*: Multiply every number inside an array by a specific factor.
+* *Input*: `[1, 2, 3, 4]`, `3`
+* *Expected Output*: `[3, 6, 9, 12]`
+
+[-] *2. VIP Filter*
+* *Goal*: Filter an array of user objects to return only the users who have a premium membership status.
+* *Input*: `[{name: "Alice", premium: true}, {name: "Bob", premium: false}]` // declare variable input, do the same for every example having obj manipulation
+* *Expected Output*: `[{name: "Alice", premium: true}]`
+
+[-] *2bis. Is Divisible by n*
+* *Goal*: Filter array of numbers divisible by n.
+* *Input*: `[1,8,123,4151, 443, 53535, 900]`, `3`
+* *Expected Output*: `[123, 53535, 900]`
+
+[-] *3. Total Price Calculator*
+* *Goal*: Sum up the total prices of all items listed in a shopping cart array.
+* *Input*: `[{item: "Book", price: 15}, {item: "Pen", price: 5}]`
+* *Expected Output*: `20`
+
+[-] *4. Specific Finder*
+* *Goal*: Search an array of products and return the first product object that matches a specific ID.
+* *Input*: `[{id: 101, name: "Shirt"}, {id: 202, name: "Shoes"}]`, `202`
+* *Expected Output*: `{id: 202, name: "Shoes"}`
+
+[-] *5. Inventory Checker*
+* *Goal*: Check if every single item object in an inventory array is currently in stock.
+* *Input*: `[{name: "Laptop", inStock: true}, {name: "Mouse", inStock: false}]`
+* *Expected Output*: `false`
+
+[-] *6. Nested Array flattener*
+* *Goal*: Take an array containing nested sub-arrays and flatten it down into a single, one-dimensional array.
+* *Input*: `[1, [2, 3], [4, [5]]]`
+* *Expected Output*: `[1, 2, 3, 4, 5]`
+
+[-] *7. Roster Organizer*
+* *Goal*: Sort an array of employee names alphabetically from A to Z.
+* *Input*: `["Zack", "Alex", "Mia", "Chris"]`
+* *Expected Output*: `["Alex", "Chris", "Mia", "Zack"]`
+
+[-] *8. Array Mirror*
+* *Goal*: Reverse the order of elements inside an array without changing or mutating the original source array.
+* *Input*: `["a", "b", "c"]`
+* *Expected Output*: `["c", "b", "a"]`
+
+[-] *9. Index Matcher*
+* *Goal*: Find and return the exact index position of a specific target element inside an array. Return -1 if it is missing.
+* *Input*: `["apple", "banana", "cherry"]`, `"banana"`
+* *Expected Output*: `1`
+
+[-] *10. Array Slicer*
+* *Goal*: Extract a smaller chunk from a larger array based on a start index and a specific count length.
+* *Input*: `["gold", "silver", "bronze", "platinum"]`, `1`, `2`
+* *Expected Output*: `["silver", "bronze"]`
+
+[-] 
+* *Goal*: 
+* *Input*: 
+* *Expected Output*: 
 
 ## Notes:
-        [ ] hNumPower() gives 'Infinity' in case of 1/0
+[-] hNumPower() gives 'Infinity' in case of 1/0
+[-] indexOf() to find character from inside different instances inside the string
+
