@@ -1,5 +1,5 @@
 //1 import you file from algorythms folder
-import {aSumNthNumber, sumNthNum} from './algorythms/aSumNthNumber.js'
+import {aSumNthNumber} from './algorythms/aSumNthNumber.js'
 import {bEvenOrOdd} from './algorythms/bEvenOrOdd.js'
 import {cFactorialLoop, cFactorialRecursion} from './algorythms/cFactorial.js'
 import {dGCD} from './algorythms/dGCD.js'
@@ -27,12 +27,6 @@ const LOGLEVEL={
 }
 //--------------------1
 aSumNthNumber(5,LOGLEVEL.NONE)
-
-//test the imported function 
-
-//sumNthNumber(5) //success case `ℹ️  the nth Sum of 5 is 15`
-
-//sumNthNumber('5s') //fail case `❌ invalid argument '5s' of type 'string'`
 
 
 //--------------------2
