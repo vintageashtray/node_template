@@ -9,7 +9,3 @@ export function aSumNthNumber(n,logLevel=3){
     }
     l.info(` 1: The nth Sum of ${n} is ${sum}`, logLevel)
 }
-
-export const sumNthNum = (n,logLevel=3) => {
-    l.info(`Testing '${n}'`, LogLevel)
-}
