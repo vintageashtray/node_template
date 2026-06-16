@@ -33,7 +33,7 @@ Strings:
 
         [-] *2. Email Masker*
         * *Goal*: Replace the characters of an email prefix with asterisks, keeping only the first and last letter of the prefix visible before the @ symbol.
-        * *Input*: "codelearn@email.com"Expected 
+        * *Input*: "codelearn@email.com"
         * *Expected Output*: "c*******n@email.com"
 
         [-] *3. URL Slug Creator*
