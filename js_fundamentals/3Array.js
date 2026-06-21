@@ -10,10 +10,11 @@ function _1arrayMultiplier(arr, mult, logLevel=3){
     // const multiplied = arr.forEach(n=>n * mult) // does not mutate array
     const multiplied = []
 
-    for(let i = 0; i < arr.length; i++){
-        const x = arr[i] * mult;
-        multiplied.push(x);
-    }
+    // for(let i = 0; i < arr.length; i++){
+    //     const x = arr[i] * mult;
+    //     multiplied.push(x);
+    // }
+    for (let n of arr) multiplied.push(n*mult)
 
     l.success(` 1: The array multiplied by '${mult}' is: [${multiplied}]`, logLevel)
 }
@@ -54,11 +55,14 @@ _2isDivisibleBy([1,8,123,4151, 443, 53535, 900], 3)
 
 
 function _3totalPriceSum(arr, logLevel=3){
-    if(!Array.isArray(arr) || !arr.every(x => typeof x == 'object')){return}
+    if(!Array.isArray(arr) || !arr.every(x => typeof x == 'object'
+         && x.hasOwnProperty('price') 
+         && typeof x.price == 'number')){return}
     
     let total = 0;
 
-    const spread = arr.forEach(x => total = total + x.price )
+    // arr.forEach(x => total = total + x.price )
+    for (let x of arr) total += x.price
 
     l.success(` 3: The sum total of prices from the shopping cart: '${total}`, logLevel)
 }
@@ -110,7 +114,9 @@ _6flattenNestedArray([1, [2, 3], [4, [5]]])
 function _7rosterOrganizer(arr, logLevel=3){
     if(!Array.isArray(arr)){return}
 
-    const sorted = arr.sort();
+    const sorted = [...arr]
+
+    sorted.sort();
 
     l.success(` 7: The alphabetically sorted roster: [${sorted}]`, logLevel) // doesn't output values with quotes, it probably shouldn't.
 }
@@ -123,9 +129,9 @@ _7rosterOrganizer(["Zack", "Alex", "Mia", "Chris"])
 function _8arrayMirror(arr, logLevel=3){
     if(!Array.isArray(arr)){return}
 
-    const mirrored = arr.toReversed();
+    const mirrored = [...arr].toReversed();
 
-    l.success(` 8: The reversed array: [${mirrored}]`)
+    l.success(` 8: The reversed array [${arr}]: [${mirrored}]`)
 }
 
 _8arrayMirror(["a", "b", "c"])

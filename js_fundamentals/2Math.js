@@ -119,7 +119,7 @@ function _9raiseToPower(base, exponent, logLevel=3){
 
     const x = Math.pow(base, exponent);
 
-    l.success(` 9: '${truncator(x)}`, logLevel)
+    l.success(` 9: '${truncator(x)}'`, logLevel)
 }
 
 _9raiseToPower(9, -1)
