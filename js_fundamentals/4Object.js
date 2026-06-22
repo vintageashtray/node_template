@@ -143,13 +143,17 @@ const _8toQueryString = (queryObj) => {
 
     let queryStr = JSON.stringify(queryObj);
 
-    queryStr = queryStr.replaceAll('"','');
-    queryStr = queryStr.replaceAll(':','=');
-    queryStr = queryStr.replaceAll(',','&');
-    queryStr = queryStr.replaceAll('{','"');
-    queryStr = queryStr.replaceAll('}',`"`);
+    // queryStr = queryStr.replaceAll('"','');
+    // queryStr = queryStr.replaceAll(':','=');
+    // queryStr = queryStr.replaceAll(',','&');
+    // queryStr = queryStr.replaceAll('{','"');
+    // queryStr = queryStr.replaceAll('}',`"`);
 
-    console.log(`✅  8: `, queryStr)
+    let q=""
+    for(let k in queryObj) q+=`${k}=${queryObj[k]}&`
+    q=`"${q.slice(0,-1)}"`
+
+    console.log(`✅  8: `, q)
 }
 
 _8toQueryString({ search: "javascript", page: 2, filter: "recent" })
@@ -162,8 +166,20 @@ const _9highlightMVP = (team) => {
 
     const topScore = Math.max(...Object.values(team));
     
-    const index = Object.values(team).findIndex(x => x == topScore)
-    const MVP = Object.keys(team)[index];
+    // Approach 1
+    // const index = Object.values(team).findIndex(x => x == topScore)
+    // const MVP = Object.keys(team)[index];
+    
+    // Approach 2
+    // const MVP = Object.keys(team).filter(k=>team[k]===topScore)[0];
+
+    // Approach 3
+    let MVP=""
+    for (let k in team){
+        if(team[k] === topScore ) {
+            MVP=k;  break;
+        }
+    }
     
     console.log(`✅  9: `, MVP)
 }
