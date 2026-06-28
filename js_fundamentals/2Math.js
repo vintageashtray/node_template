@@ -7,7 +7,7 @@ function _1rollDie(logLevel=3){
     l.success(` 1: The die rolled: '${roll}'`, logLevel)
 }
 
-_1rollDie()
+// _1rollDie()
 //--------------------
 
 
@@ -20,7 +20,7 @@ function _2getHypotenuse(a, b ,logLevel=3){
     l.success(` 2: c='${truncator(c)}' is the length of the hypotenuse of a triangle whose sides are a='${a}' and b='${b}'.`, logLevel)
 }
 
-_2getHypotenuse(5, 12)
+// _2getHypotenuse(5, 12)
 //--------------------
 
 
@@ -33,7 +33,7 @@ function _3getAbsoluteDifference(num1, num2, logLevel=3){
     l.success(` 3: The absoulte difference between '${num1}' and '${num2}' is: ${absDiff}`, logLevel)
 }
 
-_3getAbsoluteDifference(1, 100)
+// _3getAbsoluteDifference(1, 100)
 //--------------------
 
 
@@ -46,7 +46,7 @@ function _4roundPriceUp(price, logLevel=3){
     l.success(` 4: '${price}' rounded up is: '${roundUp}'`, logLevel)
 }
 
-_4roundPriceUp(15.23)
+// _4roundPriceUp(15.23)
 //--------------------
 
 
@@ -65,7 +65,7 @@ function _5findExtremes(arr, logLevel=3){
     l.success(` 5: The Extremes of the Array Range are [${extremes}]`, logLevel)
 }
 
-_5findExtremes([420,69,14,88])
+// _5findExtremes([420,69,14,88])
 //--------------------
 
 
@@ -78,7 +78,7 @@ function _6calculateCircleArea(radius, logLevel=3){
     l.success(` 6: The Area of Circle whose radius = '${radius}' is: ${truncator(circleArea)}`, logLevel)
 }
 
-_6calculateCircleArea(4)
+// _6calculateCircleArea(4)
 //--------------------
 
 
@@ -91,12 +91,12 @@ function _7removeDecimals(num, logLevel=3){
     l.success(` 7: Explicit Truncation gives: '${truncated}'`, logLevel)
 }
 
-_7removeDecimals(-50.57)
+// _7removeDecimals(-50.57)
 //--------------------
 
 
 
-function _8getRandomInRange(min, max, logLevel=3){
+export function _8getRandomInRange(min, max, logLevel=3){
     if(!isArgumentValid(min, 'number') || !isArgumentValid(max, 'number')){return}
 
     if(!Number.isInteger(min) || !Number.isInteger(max)){
@@ -107,9 +107,10 @@ function _8getRandomInRange(min, max, logLevel=3){
     const x = Math.floor((Math.random() * (max-min+1)) + min);
 
     l.success(` 8: RNG rolled: '${x}'`, logLevel)
+    return x
 }
 
-_8getRandomInRange(1, 3)
+// _8getRandomInRange(1, 3)
 //--------------------
 
 
@@ -122,7 +123,7 @@ function _9raiseToPower(base, exponent, logLevel=3){
     l.success(` 9: '${truncator(x)}'`, logLevel)
 }
 
-_9raiseToPower(9, -1)
+// _9raiseToPower(9, -1)
 //--------------------
 
 
@@ -140,4 +141,4 @@ function _10getWholeMinutes(seconds, leftover=false, logLevel=3){
     l.success(`10: '${seconds}' seconds corresponds to '${minutes}' minutes and '${truncator(secs)}' seconds.`, logLevel)
 }
 
-_10getWholeMinutes(3601.5, true)
+// _10getWholeMinutes(3601.5, true)
