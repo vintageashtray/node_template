@@ -1,6 +1,9 @@
 import {l} from '../lib/utilities.js'
 import {_8getRandomInRange} from "./2Math.js"
 import readline from "readline"
+import {bEvenOrOdd} from '../algorythms/bEvenOrOdd.js'
+import {fIsNumPrime} from '../algorythms/fIsNumPrime.js'
+import {dGCD} from '../algorythms/dGCD.js'
 class GuessingGame {
     //constructor()
     constructor(config){
@@ -9,6 +12,10 @@ class GuessingGame {
         this.initialMaxAttempts = config.maxAttemptsAllowed
         this.randomNumber = _8getRandomInRange(config.startRandomRange,config.endRandomRange, 0)
         this.maxAttemptsAllowed = config.maxAttemptsAllowed
+        
+        this.isEven = bEvenOrOdd(this.randomNumber, 0)
+        this.isPrime = fIsNumPrime(this.randomNumber, 0)
+        this.divByFive = dGCD(5, this.randomNumber, 0)
         
         this.userAttempts = 0
         this.isGameOn = true
@@ -26,7 +33,7 @@ class GuessingGame {
             this.rl.close();
             return;
         }
-        const qStr=`Guess a Number Between ${this.startRandomRange} and ${this.endRandomRange}: (attempt:${this.userAttempts+1}/${this.maxAttemptsAllowed}) `
+        const qStr=`Guess a number between ${this.startRandomRange} and ${this.endRandomRange} - (Hint: ${this.divByFive == 5 || this.isEven == 'even' || this.isPrime ? 'it\'s ' : 'none'}${this.isEven == 'even' ? 'even' : ''}${this.isPrime ? 'a prime' : ''}${this.divByFive == 5 && (this.isEven == 'even' || this.isPrime) ? ' and ' : ''}${this.divByFive == 5 ? 'divisible by 5' : ''}) - (attempt:${this.userAttempts+1}/${this.maxAttemptsAllowed}): `
         this.rl.question(qStr, (numberInput) => {
             const num = Number(numberInput);
             
@@ -41,7 +48,7 @@ class GuessingGame {
 
             // Logic
             if (num === this.randomNumber) {
-                l.success(`Spot on! You guessed it, the number was ${this.randomNumber}`);
+                l.success(`Spot on! You guessed it, the number was ${this.randomNumber}.`);
                 this.isGameOn = false; // means game over
             } else {
                 if (num < this.randomNumber) l.warn(`⬆️  It's higher️ than that`);
@@ -66,7 +73,7 @@ const game = new GuessingGame(
     {
         startRandomRange:1,
         endRandomRange:100,
-        maxAttemptsAllowed:6,
+        maxAttemptsAllowed:5,
     })
 
 // const game2 = new GuessingGame(
@@ -75,16 +82,19 @@ const game = new GuessingGame(
 //         endRandomRange:50,
 //         maxAttemptsAllowed:6,
 //     }) 
-// check if guessed number is even or prime or devisable by 5 (prompt that informs the user (do these checks) when qsking about the number)
-board = [[" "," "," "],[" "," "," "],[" "," "," "]]
-sodoku = [
-    [" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],
-    [" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],
-    [" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],
-]
-row
-col
-board[row][col]="x|o"
+
+
+
+// check if guessed number is even or prime or devisable by 5 (prompt that informs the user (do these checks) when asking about the number)
+// board = [[" "," "," "],[" "," "," "],[" "," "," "]]
+// sodoku = [
+//     [" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],
+//     [" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],
+//     [" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],[" "," "," "],
+// ]
+// row
+// col
+// board[row][col]="x|o"
 /**
  *    0  1  2
  * 0 [x][x][o]
